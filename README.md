@@ -1,6 +1,6 @@
 # hgrok - Introspected tunnels to localhost ([homepage](https://beta.hasura.io))
 ### ”I want to expose a local hasura project behind a NAT or firewall to the internet.”
-![](https://dev.beta.hasura.io/rstatic/dist/d381a3c91a318589ac4b383222295d17.png)
+![](https://raw.githubusercontent.com/hasura/ngrok/master/_docs/hgrok.png)
 
 ## What is hgrok?
 hgrok is a fork of ngrok for developers to expose their local hasura projects to the Internet via a secure tunnel.
