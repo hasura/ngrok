@@ -4,15 +4,9 @@
 
 ## What is hgrok?
 hgrok is a fork of ngrok for developers to expose their local hasura projects to the Internet via a secure tunnel.
-Just like ngrok, hgrok is a reverse proxy that creates a secure tunnel from a public endpoint to a locally running web service. hgrok captures and analyzes all traffic over the tunnel for later inspection and replay.
 
 ## What can I do with hgrok?
-- Expose any http service behind a NAT or firewall to the internet on a subdomain of hasura.me. If you choose a subdomain called 'john', requests to \*.john.hasura.me will come through the tunnel to your server.
-
-Just like ngrok, you can also use hgrok to:
-- Inspect all http requests/responses that are transmitted over the tunnel
-- Replay any request that was transmitted over the tunnel
-
+- Expose any http service behind a NAT or firewall to the internet on a subdomain of hasura.me. If you choose a subdomain called `john`, requests to `*.john.hasura.me` will come through the tunnel to your server.
 
 ## What is hgrok useful for?
 - Temporarily sharing your hasura project that is only running on your development machine
@@ -42,3 +36,6 @@ Just like ngrok, you can also use hgrok to:
 ```
 ./hgrok -authtoken="<api-token>" -subdomain="<subdomain>" -proto=http 80 
 ```
+
+## Thank you ngrok!
+hgrok is a fork of the awesome [ngrok](https://github.com/inconshreveable/ngrok). That means you can do pretty much everything you do with ngrok, wth hgrok too!
