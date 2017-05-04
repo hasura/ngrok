@@ -97,7 +97,6 @@ func httpHandler(c conn.Conn, proto string) {
 	host := strings.ToLower(vhostConn.Host())
 	auth := vhostConn.Request.Header.Get("Authorization")
 
-	//fmt.Println(vhostConn.Request.FormValue("test"))
 
 	// handle AdminRequest
 	if host == "ngrok.hasura.me" {

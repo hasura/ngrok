@@ -132,9 +132,8 @@ func NewControl(ctlConn conn.Conn, authMsg *msg.Auth) {
 	}
 
 	if authMsg.MmVersion != version.MajorMinor() {
-		//failAuth(fmt.Errorf("Incompatible versions. Server %s, client %s. Download a new version at https://storage.googleapis.com/hgrok/ngrok", version.MajorMinor(), authMsg.MmVersion))
 		c.out <- &msg.AuthResp{
-			Error: fmt.Errorf("Incompatible versions. Server %s, client %s. Download a new version at https://storage.googleapis.com/hgrok/ngrok", version.MajorMinor(), authMsg.MmVersion).Error(),
+			Error: fmt.Errorf("Incompatible versions. Server %s, client %s. Download a new version at https://storage.googleapis.com/hgrok/hgrok.zip", version.MajorMinor(), authMsg.MmVersion).Error(),
 		}
 		return
 	}

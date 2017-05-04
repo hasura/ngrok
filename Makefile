@@ -43,7 +43,7 @@ release-client-gox: BUILDTAGS=release
 release-client-gox: client-gox
 
 client-gox: deps
-	gox -tags '$(BUILDTAGS)' -osarch='windows/386 windows/amd64 linux/386 linux/amd64 darwin/386 darwin/amd64' ngrok/main/ngrok
+	gox -tags '$(BUILDTAGS)' -output='hgrok_{{.OS}}_{{.Arch}}' -osarch='windows/386 windows/amd64 linux/386 linux/amd64 darwin/386 darwin/amd64' ngrok/main/ngrok
 
 release-all: fmt release-client release-server
 
