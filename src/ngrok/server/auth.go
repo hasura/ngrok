@@ -48,7 +48,7 @@ func ValidateToken(token string, projectName string) error {
 	}
 	json.Unmarshal(body, &userData)
 	if len(userData) == 0 {
-		return errors.New("Project is not valid for your token")
+		return errors.New("subdomain is not valid for your hasura account")
 	}
 	return nil
 }
