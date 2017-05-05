@@ -137,9 +137,9 @@ func Main() {
 
 	// listen for https (We dont support https for hgrok)
 	/*
-	if opts.httpsAddr != "" {
-		listeners["https"] = startHttpListener(opts.httpsAddr, tlsConfig)
-	}
+		if opts.httpsAddr != "" {
+			listeners["https"] = startHttpListener(opts.httpsAddr, tlsConfig)
+		}
 	*/
 
 	log.Warn("Https protocol not supported")

@@ -84,18 +84,19 @@ func ParseArgs() (opts *Options, err error) {
 	subdomain := flag.String(
 		"subdomain",
 		"",
-		"Request a custom subdomain from the ngrok server. (HTTP only)")
+		"Request a custom projectname from the bet.hsaura.io server")
 
 	hostname := flag.String(
 		"hostname",
 		"",
 		"Request a custom hostname from the ngrok server. (HTTP only) (requires CNAME of your DNS)")
 
-	projectname := flag.String(
-		"subdomain",
-		"",
-		"Request a custom projectname from the bet.hsaura.io server")
-
+	/*
+		projectname := flag.String(
+			"subdomain",
+			"",
+			"Request a custom projectname from the bet.hsaura.io server")
+	*/
 	protocol := flag.String(
 		"proto",
 		"http+https",
@@ -112,11 +113,11 @@ func ParseArgs() (opts *Options, err error) {
 		protocol:    *protocol,
 		authtoken:   *authtoken,
 		hostname:    *hostname,
-		projectname: *projectname,
+		projectname: *subdomain,
 		command:     flag.Arg(0),
 	}
 
-	if opts.projectname == "" {
+	if opts.subdomain == "" {
 		err = fmt.Errorf("Error: Specify subdomain from beta.hasura.io console")
 		return
 	}

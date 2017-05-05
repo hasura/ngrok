@@ -15,4 +15,3 @@ device.key
 rootCA.key
 rootCA.pem
 rootCA.srl
-hgrok_*

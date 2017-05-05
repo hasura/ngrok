@@ -46,7 +46,7 @@ Tunnel Request for %s sent to client
 	OfflineMessage = `HTTP/1.0 400 Bad Request
 
 %s
-`	
+`
 )
 
 // Listens for new http(s) connections from the public internet
@@ -97,7 +97,6 @@ func httpHandler(c conn.Conn, proto string) {
 	host := strings.ToLower(vhostConn.Host())
 	auth := vhostConn.Request.Header.Get("Authorization")
 
-
 	// handle AdminRequest
 	if host == "ngrok.hasura.me" {
 		err = adminRequest(vhostConn)
@@ -126,7 +125,7 @@ func httpHandler(c conn.Conn, proto string) {
 		// Get projectName from request
 		projectName := localDevDomain[len(localDevDomain)-3:][0]
 		c.Info("Request Project: %s", projectName)
-		tunnel = tunnelRegistry.Get(fmt.Sprintf("%s://%s", proto, "console."+projectName + ".hasura.me"))
+		tunnel = tunnelRegistry.Get(fmt.Sprintf("%s://%s", proto, "console."+projectName+".hasura.me"))
 		if tunnel == nil {
 			c.Info("No tunnel found for hostname %s", host)
 			message, _ := GetProjectMessage(c, projectName)

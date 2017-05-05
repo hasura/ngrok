@@ -4,9 +4,10 @@ import (
 	"net/http"
 	"ngrok/log"
 
-	vhost "github.com/inconshreveable/go-vhost"
-	"strings"
 	"errors"
+	"strings"
+
+	vhost "github.com/inconshreveable/go-vhost"
 )
 
 func messageAPI(req *http.Request) (err error) {

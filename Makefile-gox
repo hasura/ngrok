@@ -39,12 +39,6 @@ release-client: client
 release-server: BUILDTAGS=release
 release-server: server
 
-release-client-gox: BUILDTAGS=release
-release-client-gox: client-gox
-
-client-gox: deps
-	gox -tags '$(BUILDTAGS)' -osarch='windows/386 windows/amd64 linux/386 linux/amd64 darwin/386 darwin/amd64' ngrok/main/ngrok
-
 release-all: fmt release-client release-server
 
 all: fmt client server
@@ -56,3 +50,15 @@ clean:
 contributors:
 	echo "Contributors to ngrok, both large and small:\n" > CONTRIBUTORS
 	git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' | cut -d '<' -f1 >> CONTRIBUTORS
+
+release-client-gox: BUILDTAGS=release
+release-client-gox: client-gox
+
+client-gox: deps
+		  /home/arvi/ngrok-build/workspace/gox/bin/gox -tags '$(BUILDTAGS)' -osarch='windows/386 windows/amd64 linux/386 linux/amd64 darwin/386 darwin/amd64' ngrok/main/ngrok
+
+release-server-gox: BUILDTAGS=release
+release-server-gox: server-gox
+
+server-gox: deps
+		  /home/arvi/ngrok-build/workspace/gox/bin/gox -tags '$(BUILDTAGS)' -osarch='windows/386 windows/amd64 linux/386 linux/amd64 darwin/386 darwin/amd64' ngrok/main/ngrokd

@@ -1,11 +1,11 @@
 package server
 
 import (
-	"ngrok/log"
-	hasura "ngrok/hasura"
-	"errors"
 	"encoding/json"
+	"errors"
 	"ngrok/conn"
+	hasura "ngrok/hasura"
+	"ngrok/log"
 )
 
 var ProjectsMessage = map[string]string{}
@@ -22,23 +22,6 @@ func fetchMessage(projectName string) (message string, err error) {
 			},
 		},
 	}
-	/*
-	request := gorequest.New()
-	resp, body, errs := request.Post("https://data.beta.hasura.io/v1/query").
-		Send(m).
-		EndBytes()
-	if errs != nil {
-		err = errors.New(errs[0].Error())
-		return
-	}
-	if resp.StatusCode != 200 {
-		log.Info("Status %d", resp.StatusCode)
-		json.Unmarshal(body, &hError)
-		log.Info("Hasura Error %s", hError.Error)
-		err = errors.New(hError.Error)
-		return
-	}
-	*/
 	_, body, err := hasura.SendQuery(m)
 	if err != nil {
 		log.Warn("Error in fetching all messages %s", err.Error())
@@ -53,7 +36,6 @@ func fetchMessage(projectName string) (message string, err error) {
 	message = userData[0].Message
 	return
 }
-
 
 func GetProjectMessage(c conn.Conn, ProjectName string) (message string, err error) {
 	c.Info("Getting Message for Project %s", ProjectName)
@@ -70,7 +52,7 @@ func GetProjectMessage(c conn.Conn, ProjectName string) (message string, err err
 	return
 }
 
-func fetchAllProjects(){
+func fetchAllProjects() {
 	var userData []NgrokUsers
 	m := hasura.HasuraQuery{
 		Type: "select",
@@ -89,7 +71,7 @@ func fetchAllProjects(){
 		log.Warn("No Projects Found")
 		return
 	}
-	for _, project := range userData{
+	for _, project := range userData {
 		ProjectsMessage[project.ProjectName] = project.Message
 	}
 	log.Info("Messages Updated")

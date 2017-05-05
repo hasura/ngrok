@@ -147,7 +147,7 @@ func LoadConfiguration(opts *Options) (config *Configuration, err error) {
 	case "default":
 		hasuraServices := []string{"console", "data", "auth", "k8s"}
 		// set Hostname to config.Hostname
-		config.ProjectName = opts.projectname
+		config.ProjectName = opts.subdomain
 		config.HasuraDomain = defaultHasuraDomain
 		config.Tunnels = make(map[string]*TunnelConfiguration)
 		for _, service := range hasuraServices {
