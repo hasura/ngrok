@@ -23,19 +23,19 @@ hgrok is a fork of ngrok for developers to expose their local hasura projects to
 - Run the following command if you are running a server on minikube (mac/linux):
 
 ```
-./hgrok -authtoken="<api-token>" -subdomain="<subdomain>" -proto=http $(minikube ip):80 
+sudo ./hgrok -authtoken="<api-token>" -subdomain="<subdomain>" -proto=http $(minikube ip):80 
 ```
 
 - Get your minikube ip, and substitute \<minikube-ip> in the command below:
 
 ```
-./hgrok -authtoken="<api-token>" -subdomain="<subdomain>" -proto=http <minikube-ip>:80 
+sudo ./hgrok -authtoken="<api-token>" -subdomain="<subdomain>" -proto=http <minikube-ip>:80 
 ```
 
 - Run the following command if you are running a server on localhost:80
 
 ```
-./hgrok -authtoken="<api-token>" -subdomain="<subdomain>" -proto=http 80 
+sudo ./hgrok -authtoken="<api-token>" -subdomain="<subdomain>" -proto=http 80 
 ```
 
 ## Thank you ngrok!
