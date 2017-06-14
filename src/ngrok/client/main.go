@@ -2,13 +2,14 @@ package client
 
 import (
 	"fmt"
-	"github.com/inconshreveable/mousetrap"
 	"math/rand"
-	"ngrok/log"
-	"ngrok/util"
 	"os"
 	"runtime"
 	"time"
+
+	"github.com/inconshreveable/mousetrap"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
 )
 
 func init() {

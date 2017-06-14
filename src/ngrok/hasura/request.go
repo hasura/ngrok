@@ -4,7 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 	"net/http"
-	log "ngrok/log"
+
+	log "gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
 
 	"github.com/parnurzeal/gorequest"
 )

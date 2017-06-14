@@ -6,9 +6,9 @@ import (
 
 	vhost "github.com/inconshreveable/go-vhost"
 	//"net"
-	"ngrok/conn"
-	"ngrok/log"
-	"ngrok/msg"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/msg"
 	"strings"
 	"time"
 )

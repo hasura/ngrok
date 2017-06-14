@@ -2,13 +2,14 @@ package client
 
 import (
 	"fmt"
-	"ngrok/client/mvc"
-	"ngrok/client/views/term"
-	"ngrok/client/views/web"
-	"ngrok/log"
-	"ngrok/proto"
-	"ngrok/util"
 	"sync"
+
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/views/term"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/views/web"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
 )
 
 type command interface{}

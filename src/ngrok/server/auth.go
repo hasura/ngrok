@@ -4,7 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	hasura "ngrok/hasura"
+
+	hasura "gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/hasura"
 
 	"github.com/parnurzeal/gorequest"
 )

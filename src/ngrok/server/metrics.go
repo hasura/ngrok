@@ -4,13 +4,15 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	gometrics "github.com/rcrowley/go-metrics"
 	"io/ioutil"
 	"net/http"
-	"ngrok/conn"
-	"ngrok/log"
 	"os"
 	"time"
+
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+
+	gometrics "gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/github.com/rcrowley/go-metrics"
 )
 
 var metrics Metrics

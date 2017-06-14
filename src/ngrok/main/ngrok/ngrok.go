@@ -1,7 +1,7 @@
 package main
 
 import (
-	"ngrok/client"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client"
 )
 
 func main() {

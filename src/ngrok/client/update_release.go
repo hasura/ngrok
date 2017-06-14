@@ -3,10 +3,11 @@
 package client
 
 import (
-	"ngrok/client/mvc"
-	"ngrok/log"
-	"ngrok/version"
 	"time"
+
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/version"
 
 	"gopkg.in/inconshreveable/go-update.v0"
 	"gopkg.in/inconshreveable/go-update.v0/check"

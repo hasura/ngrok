@@ -9,13 +9,14 @@ import (
 	"net/http"
 	"net/http/httputil"
 	"net/url"
-	"ngrok/client/assets"
-	"ngrok/client/mvc"
-	"ngrok/log"
-	"ngrok/proto"
-	"ngrok/util"
 	"strings"
 	"unicode/utf8"
+
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/assets"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
 )
 
 type SerializedTxn struct {

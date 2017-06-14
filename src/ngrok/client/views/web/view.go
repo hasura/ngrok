@@ -2,14 +2,15 @@
 package web
 
 import (
-	"github.com/gorilla/websocket"
 	"net/http"
-	"ngrok/client/assets"
-	"ngrok/client/mvc"
-	"ngrok/log"
-	"ngrok/proto"
-	"ngrok/util"
 	"path"
+
+	"github.com/gorilla/websocket"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/assets"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
 )
 
 type WebView struct {

@@ -5,13 +5,14 @@ import (
 	"io/ioutil"
 	"net"
 	"net/url"
-	"ngrok/log"
 	"os"
 	"os/user"
 	"path"
 	"regexp"
 	"strconv"
 	"strings"
+
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
 
 	yaml "gopkg.in/yaml.v2"
 )

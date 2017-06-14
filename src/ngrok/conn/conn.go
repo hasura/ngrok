@@ -5,14 +5,15 @@ import (
 	"crypto/tls"
 	"encoding/base64"
 	"fmt"
-	vhost "github.com/inconshreveable/go-vhost"
 	"io"
 	"math/rand"
 	"net"
 	"net/http"
 	"net/url"
-	"ngrok/log"
 	"sync"
+
+	vhost "github.com/inconshreveable/go-vhost"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
 )
 
 type Conn interface {

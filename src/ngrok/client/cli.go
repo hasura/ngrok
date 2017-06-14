@@ -1,10 +1,13 @@
 package client
 
 import (
-	"flag"
 	"fmt"
-	"ngrok/version"
 	"os"
+
+	flag "github.com/spf13/pflag"
+
+	pkgConfig "gitlab.com/hasura/hasuractl-go/config"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/version"
 )
 
 const usage1 string = `Usage: %s [OPTIONS] <local port or address>
@@ -56,6 +59,10 @@ func ParseArgs() (opts *Options, err error) {
 		fmt.Fprintf(os.Stderr, usage2)
 	}
 
+	token, _ := pkgConfig.Get("token")
+	ngrokDomain, _ := pkgConfig.Get("hgrokDomain")
+	miniHasuraIP, _ := pkgConfig.Get("ip")
+
 	config := flag.String(
 		"config",
 		"",
@@ -73,7 +80,7 @@ func ParseArgs() (opts *Options, err error) {
 
 	authtoken := flag.String(
 		"authtoken",
-		"",
+		token,
 		"Authentication token for identifying an beta.hasura.io account")
 
 	httpauth := flag.String(
@@ -83,7 +90,7 @@ func ParseArgs() (opts *Options, err error) {
 
 	subdomain := flag.String(
 		"subdomain",
-		"",
+		ngrokDomain,
 		"Request a custom projectname from the bet.hsaura.io server")
 
 	hostname := flag.String(
@@ -91,15 +98,9 @@ func ParseArgs() (opts *Options, err error) {
 		"",
 		"Request a custom hostname from the ngrok server. (HTTP only) (requires CNAME of your DNS)")
 
-	/*
-		projectname := flag.String(
-			"subdomain",
-			"",
-			"Request a custom projectname from the bet.hsaura.io server")
-	*/
 	protocol := flag.String(
 		"proto",
-		"http+https",
+		"http",
 		"The protocol of the traffic over the tunnel {'http', 'https', 'tcp'} (default: 'http+https')")
 
 	flag.Parse()
@@ -142,7 +143,7 @@ func ParseArgs() (opts *Options, err error) {
 		return
 
 	default:
-		if len(flag.Args()) > 1 {
+		if len(flag.Args()) > 2 {
 			err = fmt.Errorf("You may only specify one port to tunnel to on the command line, got %d: %v",
 				len(flag.Args()),
 				flag.Args())
@@ -150,7 +151,7 @@ func ParseArgs() (opts *Options, err error) {
 		}
 
 		opts.command = "default"
-		opts.args = flag.Args()
+		opts.args = []string{miniHasuraIP + ":80"}
 	}
 
 	return

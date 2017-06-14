@@ -4,10 +4,11 @@ import (
 	"encoding/gob"
 	"fmt"
 	"net"
-	"ngrok/cache"
-	"ngrok/log"
 	"sync"
 	"time"
+
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/cache"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
 )
 
 const (

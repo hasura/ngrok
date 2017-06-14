@@ -6,7 +6,8 @@ import (
 	"crypto/x509"
 	"encoding/pem"
 	"fmt"
-	"ngrok/client/assets"
+
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/assets"
 )
 
 func LoadTLSConfig(rootCertPaths []string) (*tls.Config, error) {

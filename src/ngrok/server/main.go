@@ -3,13 +3,16 @@ package server
 import (
 	"crypto/tls"
 	"math/rand"
-	"ngrok/conn"
-	log "ngrok/log"
-	"ngrok/msg"
-	"ngrok/util"
 	"os"
 	"runtime/debug"
 	"time"
+
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
+
+	log "gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/msg"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
 )
 
 const (

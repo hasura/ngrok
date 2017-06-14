@@ -1,7 +1,7 @@
 package proto
 
 import (
-	"ngrok/conn"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
 )
 
 type Protocol interface {

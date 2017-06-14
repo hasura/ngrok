@@ -3,9 +3,10 @@ package server
 import (
 	"encoding/json"
 	"errors"
-	"ngrok/conn"
-	hasura "ngrok/hasura"
-	"ngrok/log"
+
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
+	hasura "gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/hasura"
+	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
 )
 
 var ProjectsMessage = map[string]string{}
