@@ -1,0 +1,43 @@
+hash: bedc9b9a5d4e8994692020c29a87fc6a955a32421c828e788c214d1b16f80e42
+updated: 2017-06-14T02:48:51.351089957+05:30
+imports:
+- name: github.com/alecthomas/log4go
+  version: 18d87da5025a6e8bd58dede5ecffe3f62115bc4f
+- name: github.com/gorilla/websocket
+  version: 3ab3a8b8831546bd18fd182c20687ca853b2bb13
+- name: github.com/inconshreveable/go-vhost
+  version: 06d84117953b22058c096b49a429ebd4f3d3d97b
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/jteeuwen/go-bindata
+  version: bbd0c6e271208dce66d8fda4bc536453cd27fc4a
+- name: github.com/kardianos/osext
+  version: ae77be60afb1dcacde03767a8c37337fad28ac14
+- name: github.com/kr/binarydist
+  version: 3035450ff8b987ec4373f65c40767f096b35f2d2
+- name: github.com/mattn/go-runewidth
+  version: 97311d9f7767e3d6f422ea06661bc2c7a19e8a5d
+- name: github.com/moul/http2curl
+  version: 4e24498b31dba4683efb9d35c1c8a91e2eda28c8
+- name: github.com/nsf/termbox-go
+  version: 4163cd39dda1c0dda883a713640bc01e08951c24
+- name: github.com/parnurzeal/gorequest
+  version: a578a48e8d6ca8b01a3b18314c43c6716bb5f5a3
+- name: github.com/pkg/errors
+  version: c605e284fe17294bda444b34710735b29d1a9d90
+- name: github.com/rcrowley/go-metrics
+  version: 1f30fe9094a513ce4c700b9a54458bbb0c96996c
+- name: github.com/spf13/pflag
+  version: e57e3eeb33f795204c1ca35f56c44f83227c6e66
+- name: golang.org/x/net
+  version: dfe83d419c9403b40b19d08cdba2afec27b002f7
+  subpackages:
+  - publicsuffix
+- name: gopkg.in/inconshreveable/go-update.v0
+  version: d8b0b1d421aa1cbf392c05869f8abbc669bb7066
+  subpackages:
+  - check
+  - download
+- name: gopkg.in/yaml.v2
+  version: cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b
+testImports: []

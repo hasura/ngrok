@@ -1,0 +1,19 @@
+package: gitlab.com/hasura/hasuractl-go/pkg/ngrok/src
+ignore:
+  - gitlab.com/hasura/hasuractl-go
+import:
+- package: github.com/alecthomas/log4go
+- package: github.com/gorilla/websocket
+  version: v1.1.0
+- package: github.com/inconshreveable/go-vhost
+- package: github.com/inconshreveable/mousetrap
+- package: github.com/jteeuwen/go-bindata
+  version: v3.0.7
+- package: github.com/nsf/termbox-go
+- package: github.com/parnurzeal/gorequest
+  version: v0.2.15
+- package: github.com/rcrowley/go-metrics
+- package: gopkg.in/inconshreveable/go-update.v0
+  subpackages:
+  - check
+- package: gopkg.in/yaml.v2

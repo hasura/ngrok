@@ -9,6 +9,7 @@ src/gopkg.in
 src/golang.org
 src/ngrok/client/assets/
 src/ngrok/server/assets/
+src/vendor
 device.crt
 device.csr
 device.key
