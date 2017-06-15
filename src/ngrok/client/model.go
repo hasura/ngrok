@@ -26,7 +26,7 @@ import (
 const (
 	defaultServerAddr   = "ngrok.hasura.me:4443"
 	defaultInspectAddr  = "127.0.0.1:4040"
-	defaultHasuraDomain = "hasura.me"
+	DefaultHasuraDomain = "hasura.me"
 	pingInterval        = 20 * time.Second
 	maxPongLatency      = 15 * time.Second
 	updateCheckInterval = 6 * time.Hour
