@@ -19,6 +19,8 @@ hgrok is a fork of ngrok for developers to expose their local hasura projects to
 - Go to http://console.vcap.me/advanced and add your new hasura.me domain in the Domain Configuration section.
 - Get your hasura.io api token from https://dev.beta.hasura.io/settings
 - Download the hgrok binary for your OS from [releases](https://github.com/hasura/ngrok/releases/latest)
+- Rename the downloaded file to `hgrok` (just to make it easier to run the next set of commands)
+- Run `chmod +x hgrok` after downloading the binary
 
 - Run the following command if you are running a server on minikube (mac/linux):
 
