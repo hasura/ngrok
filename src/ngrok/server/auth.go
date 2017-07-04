@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	hasura "gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/hasura"
+	hasura "github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/hasura"
 
 	"github.com/parnurzeal/gorequest"
 )

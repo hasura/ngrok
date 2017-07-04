@@ -12,13 +12,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/msg"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/version"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/msg"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/version"
 
 	metrics "github.com/rcrowley/go-metrics"
 )

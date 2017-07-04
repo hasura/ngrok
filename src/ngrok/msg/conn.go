@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
 )
 
 func readMsgShared(c conn.Conn) (buffer []byte, err error) {

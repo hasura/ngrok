@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/inconshreveable/mousetrap"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
 )
 
 func init() {

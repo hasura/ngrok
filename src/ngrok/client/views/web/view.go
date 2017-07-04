@@ -6,11 +6,11 @@ import (
 	"path"
 
 	"github.com/gorilla/websocket"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/assets"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/assets"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
 )
 
 type WebView struct {

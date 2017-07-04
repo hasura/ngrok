@@ -4,10 +4,10 @@ import (
 	"unicode/utf8"
 
 	termbox "github.com/nsf/termbox-go"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
 )
 
 const (

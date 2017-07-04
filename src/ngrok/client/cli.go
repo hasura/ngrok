@@ -6,8 +6,8 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	pkgConfig "gitlab.com/hasura/hasuractl-go/config"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/version"
+	pkgConfig "github.com/hasura/hasuractl-go/config"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/version"
 )
 
 const usage1 string = `Usage: %s [OPTIONS] <local port or address>

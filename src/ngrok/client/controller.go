@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"sync"
 
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/views/term"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/views/web"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/views/term"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/views/web"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
 )
 
 type command interface{}

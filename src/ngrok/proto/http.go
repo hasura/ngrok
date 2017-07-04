@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
 
 	metrics "github.com/rcrowley/go-metrics"
 )

@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/cache"
-	"gitlab.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/cache"
+	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
 )
 
 const (
