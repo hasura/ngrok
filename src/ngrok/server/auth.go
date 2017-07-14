@@ -32,7 +32,7 @@ func ValidateToken(token string, projectName string) error {
 	}
 	// Send the request to data api
 	request := gorequest.New()
-	resp, body, errs := request.Post("https://data.beta.hasura.io/v1/query").
+	resp, body, errs := request.Post("https://data.hasura.io/v1/query").
 		Send(m).
 		Set("Authorization", "Bearer "+token).
 		Set("X-Hasura-Role", "user").

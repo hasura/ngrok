@@ -81,7 +81,7 @@ func ParseArgs() (opts *Options, err error) {
 	authtoken := flag.String(
 		"authtoken",
 		token,
-		"Authentication token for identifying an beta.hasura.io account")
+		"Authentication token for identifying an hasura.io account")
 
 	httpauth := flag.String(
 		"httpauth",
@@ -119,7 +119,7 @@ func ParseArgs() (opts *Options, err error) {
 	}
 
 	if opts.subdomain == "" {
-		err = fmt.Errorf("Error: Specify subdomain from beta.hasura.io console")
+		err = fmt.Errorf("Error: Specify subdomain from hasura.io console")
 		return
 	}
 

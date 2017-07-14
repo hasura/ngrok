@@ -13,7 +13,7 @@ import (
 func SendQuery(m interface{}) (resp *http.Response, body []byte, err error) {
 	var hError HasuraError
 	request := gorequest.New()
-	resp, body, errs := request.Post("https://data.beta.hasura.io/v1/query").
+	resp, body, errs := request.Post("https://data.hasura.io/v1/query").
 		Send(m).
 		EndBytes()
 	if errs != nil {
