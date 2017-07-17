@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/log"
 
 	"errors"
 	"strings"

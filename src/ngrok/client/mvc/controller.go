@@ -1,7 +1,7 @@
 package mvc
 
 import (
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/util"
 )
 
 type Controller interface {

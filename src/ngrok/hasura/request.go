@@ -5,7 +5,7 @@ import (
 	"errors"
 	"net/http"
 
-	log "github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	log "github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/log"
 
 	"github.com/parnurzeal/gorequest"
 )

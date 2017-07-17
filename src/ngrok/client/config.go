@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/log"
 
 	yaml "gopkg.in/yaml.v2"
 )

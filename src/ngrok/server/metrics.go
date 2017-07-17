@@ -9,10 +9,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/conn"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/log"
 
-	gometrics "github.com/hasura/hasuractl-go/pkg/ngrok/src/github.com/rcrowley/go-metrics"
+	gometrics "github.com/hasura/hasuractl/pkg/ngrok/src/github.com/rcrowley/go-metrics"
 )
 
 var metrics Metrics

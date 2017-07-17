@@ -4,7 +4,7 @@ import (
 	"crypto/tls"
 	"io/ioutil"
 
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/server/assets"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/server/assets"
 )
 
 func LoadTLSConfig(crtPath string, keyPath string) (tlsConfig *tls.Config, err error) {

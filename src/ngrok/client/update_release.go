@@ -5,9 +5,9 @@ package client
 import (
 	"time"
 
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/mvc"
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/version"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/client/mvc"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/version"
 
 	"gopkg.in/inconshreveable/go-update.v0"
 	"gopkg.in/inconshreveable/go-update.v0/check"

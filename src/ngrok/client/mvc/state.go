@@ -2,7 +2,7 @@ package mvc
 
 import (
 	metrics "github.com/rcrowley/go-metrics"
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/proto"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/proto"
 )
 
 type UpdateStatus int

@@ -1,6 +1,6 @@
-package: github.com/hasura/hasuractl-go/pkg/ngrok/src
+package: github.com/hasura/hasuractl/pkg/ngrok/src
 ignore:
-  - github.com/hasura/hasuractl-go
+  - github.com/hasura/hasuractl
 import:
 - package: github.com/alecthomas/log4go
 - package: github.com/gorilla/websocket

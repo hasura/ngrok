@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/server"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/server"
 )
 
 func main() {

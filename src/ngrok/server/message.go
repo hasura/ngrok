@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
-	hasura "github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/hasura"
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/conn"
+	hasura "github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/hasura"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/log"
 )
 
 var ProjectsMessage = map[string]string{}

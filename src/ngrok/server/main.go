@@ -7,12 +7,12 @@ import (
 	"runtime/debug"
 	"time"
 
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/conn"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/conn"
 
-	log "github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	log "github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/log"
 
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/msg"
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/util"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/msg"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/util"
 )
 
 const (

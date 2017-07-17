@@ -13,7 +13,7 @@ import (
 	"sync"
 
 	vhost "github.com/inconshreveable/go-vhost"
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/log"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/log"
 )
 
 type Conn interface {

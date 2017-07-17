@@ -7,7 +7,7 @@ import (
 	"encoding/pem"
 	"fmt"
 
-	"github.com/hasura/hasuractl-go/pkg/ngrok/src/ngrok/client/assets"
+	"github.com/hasura/hasuractl/pkg/ngrok/src/ngrok/client/assets"
 )
 
 func LoadTLSConfig(rootCertPaths []string) (*tls.Config, error) {
