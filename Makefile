@@ -21,13 +21,13 @@ assets: client-assets server-assets
 bin/go-bindata:
 	GOOS="" GOARCH="" go get github.com/jteeuwen/go-bindata/go-bindata
 
-client-assets: bin/go-bindata
+client-assets:
 	go-bindata -nomemcopy -pkg=assets -tags=$(BUILDTAGS) \
 		-debug=$(if $(findstring debug,$(BUILDTAGS)),true,false) \
 		-o=src/ngrok/client/assets/assets_$(BUILDTAGS).go \
 		assets/client/...
 
-server-assets: bin/go-bindata
+server-assets:
 	go-bindata -nomemcopy -pkg=assets -tags=$(BUILDTAGS) \
 		-debug=$(if $(findstring debug,$(BUILDTAGS)),true,false) \
 		-o=src/ngrok/server/assets/assets_$(BUILDTAGS).go \
